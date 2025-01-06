@@ -38,7 +38,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="w-full py-16 bg-transparent text-white px-6 mb-8 mt-8 md:mt-16"
+      className="w-full py-16 bg-transparent text-white px-6 mb-6 md:mb-8 mt-8 md:mt-16"
     >
       <motion.h2
         className="text-2xl md:text-5xl font-bold text-center mb-12 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 bg-clip-text text-transparent"
@@ -54,12 +54,13 @@ const Skills = () => {
           <motion.div
             key={index}
             className="bg-gradient-to-br from-black via-gray-800 to-black rounded-lg shadow-lg p-6"
-            initial={{ opacity: 0, y: 20, scale: 0.9 }}
-            whileHover={{ scale: 1.05 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
+            initial={{ opacity: 0, y: 140}}
+            whileInView={{opacity:1, y: 0}}
+            viewport={{once: false}}
+            // animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{
-              duration: 0.8,
-              delay: index * 0.2, // Stagger animation for each card
+              duration: 1,
+              // delay: index * 0.2, 
             }}
           >
             <div className="flex items-center mb-4">

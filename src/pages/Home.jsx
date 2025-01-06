@@ -38,7 +38,7 @@ const Home = () => {
           >
             <a
               href="#projects"
-              className="bg-gradient-to-r from-cyan-500 to-blue-500 px-8 py-3 rounded-full text-white text-lg font-semibold hover:from-cyan-600 hover:to-blue-600 transition duration-300"
+              className="bg-gradient-to-r from-cyan-500 to-blue-500 px-8 py-3 rounded-full text-white text-base md:text-lg font-semibold hover:from-cyan-600 hover:to-blue-600 transition duration-300"
             >
              My Work
             </a>

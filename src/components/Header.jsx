@@ -4,8 +4,8 @@ import { Link } from "react-scroll"; // Import Link from react-scroll
 export default function Header({ toggleSidebar }) {
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/CV.pdf";
-    link.download = "CV.pdf";
+    link.href = "/Sadkhan_Mulla.pdf";
+    link.download = "Sadkhan_Mulla.pdf";
     link.click();
   };
 

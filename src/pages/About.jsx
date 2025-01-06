@@ -49,9 +49,11 @@ const About = () => {
 
         <motion.div
           className="mt-16 text-center"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.8 }}
+          initial={{ opacity: 0, x:-100 }}
+          // animate={{ opacity: 1, x:0 }}
+          whileInView={{opacity:1, x:0}}
+          viewport={{once: false}}
+          transition={{ duration: 1}}
         >
           <p className="text-lg md:text-xl text-gray-400">
             I’m always open to collaborating on exciting projects.{" "}

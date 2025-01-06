@@ -30,7 +30,7 @@ const Project = () => {
   return (
     <section
       id="projects"
-      className="w-full py-12 bg-transparent text-white px-6 h-auto md:mt-8"
+      className="w-full py-6 md:py-12 bg-transparent text-white px-6 h-auto md:mt-8"
     >
       <motion.h2
         className="text-2xl md:text-5xl font-bold text-center mb-12 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 bg-clip-text text-transparent"
@@ -51,7 +51,8 @@ const Project = () => {
             transition={{ duration: 1 }}
           >
             <Tilt
-              className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-lg shadow-lg overflow-hidden"
+              className="bg-gradient-to-br from-black/60 via-gray-900/70 to-black/60
+ rounded-lg shadow-lg overflow-hidden"
               options={{
                 max: 25,
                 scale: 1.1,
