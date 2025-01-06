@@ -46,8 +46,9 @@ const Project = () => {
           <motion.div
             key={index}
             className="opacity-75"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 200 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{once:false}}
             transition={{ duration: 1 }}
           >
             <Tilt
