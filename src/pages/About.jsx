@@ -7,7 +7,6 @@ const About = () => {
       id="about"
       className="w-full h-auto py-16 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6"
     >
-
       <div className="max-w-7xl mx-auto flex flex-col items-center">
         <motion.h2
           className="text-4xl md:text-5xl font-bold text-center mb-10 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 text-transparent bg-clip-text"
@@ -24,8 +23,13 @@ const About = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-
-          <div className="flex-1">
+          <motion.div
+            className="flex-1"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false }}
+            transition={{ duration:1 }}
+          >
             <p className="text-base md:text-lg text-gray-300 leading-relaxed mb-6">
               Hello, I’m{" "}
               <span className="text-cyan-400 font-semibold">Sadkhan Mulla</span>
@@ -44,16 +48,16 @@ const About = () => {
               I improve my problem-solving skills on LeetCode, stay updated with
               tech trends, and collaborate on innovative projects.
             </p>
-          </div>
+          </motion.div>
         </motion.div>
 
         <motion.div
           className="mt-16 text-center"
-          initial={{ opacity: 0, x:-100 }}
+          initial={{ opacity: 0, x: -100 }}
           // animate={{ opacity: 1, x:0 }}
-          whileInView={{opacity:1, x:0}}
-          viewport={{once: false}}
-          transition={{ duration: 1}}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false }}
+          transition={{ duration: 1 }}
         >
           <p className="text-lg md:text-xl text-gray-400">
             I’m always open to collaborating on exciting projects.{" "}
